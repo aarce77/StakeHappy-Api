@@ -12,9 +12,9 @@ namespace StakHappy.Api.Controllers
     {
         public readonly Guid UserId;
         public readonly L Logic;
+
         public BaseController()
         {
-            //Guid.TryParse(this.Request.Headers["UserId"], out UserId);
             Logic = new L();
 
             var httpContext = new HttpContextAccessor().HttpContext;
